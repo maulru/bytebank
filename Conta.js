@@ -10,8 +10,7 @@ export class Conta {
   }
 
   sacar(valor) {
-    let taxa = 1;
-    return this._sacar(valor, taxa);
+    throw new Error("O método sacar não pode ser chamado diretamente da classe abstrata")
   }
 
   _sacar(valor, taxa) {
@@ -25,7 +24,7 @@ export class Conta {
   }
 
   depositar(valor) {
-    if (valor <= 100) {
+    if (valor <= 0) {
       return;
     }
     this._saldo += valor;
