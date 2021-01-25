@@ -10,7 +10,7 @@ gerente.cadastrarSenha("123456");
 
 const cliente = new Cliente("Lais", 10123152560,"123")
 const diretorEstaLogado = SistemaAutenticacao.login(diretor, "123456");
-const gerenteEstaLogado = SistemaAutenticacao.login(gerente, "12346");
+const gerenteEstaLogado = SistemaAutenticacao.login(gerente, "123456");
 
 const clienteEstaLogado = SistemaAutenticacao.login(cliente, "123456");
 
